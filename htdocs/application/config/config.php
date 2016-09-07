@@ -37,7 +37,7 @@ $config['base_url'] = "{$srv_prot}://{$srv_name}{$srv_port}";
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------

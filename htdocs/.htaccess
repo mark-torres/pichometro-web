@@ -1,0 +1,10 @@
+<IfModule rewrite_module>
+	RewriteBase /
+	RewriteEngine on
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)$ /index.php/$1 [L]
+</IfModule>
+<IfModule deflate_module>
+	AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript
+</IfModule>
